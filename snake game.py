@@ -87,10 +87,10 @@ while True:
         x=segment[i-1].xcor()
         y=segment[i-1].ycor()
         segment[i].goto(x,y) 
-    if  len(segment)>0:
-       x=snake.xcor()
-       y=snake.ycor()
-       segment[0].goto(x,y)
+        if  len(segment)>0:
+            x=snake.xcor()
+            y=snake.ycor()
+            segment[0].goto(x-1,y+1)
        
     move()
 
